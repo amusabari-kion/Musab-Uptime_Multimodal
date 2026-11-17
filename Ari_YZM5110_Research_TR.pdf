@@ -1,0 +1,342 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [6 0 R 8 0 R 10 0 R 12 0 R 14 0 R] /Count 5 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Length 5952 >>
+stream
+BT /F2 14 Tf 50.0 790.0 Td (?al??ma S?resi \(Uptime\) Uygulamalar?nda ?ok) Tj ET
+BT /F2 14 Tf 50.0 772.0 Td (Kipli Erken Uyar? ve Dinamik Kap?l? F?zyon ile Anomali Tespiti) Tj ET
+BT /F1 9.5 Tf 50.0 750.0 Td (Ders: YZM5110 - Arastirma Projesi \(Cok Modlu Ogrenme\) | Tarih: Kasim 2026) Tj ET
+BT /F1 9.5 Tf 50.0 736.0 Td (Yazar: A. Musab Ari \(Yildiz Teknik Universitesi, Fen Bilimleri Enstitusu\)) Tj ET
+BT /F1 9.5 Tf 50.0 722.0 Td (Depo URL: https://github.com/amusabari/Musab-Uptime_Multimodal) Tj ET
+BT /F2 11 Tf 50.0 698.0 Td (Overview) Tj ET
+BT /F1 8.5 Tf 50.0 682.0 Td (Ders: YZM5110 - Ara?t?rma Projesi \(?ok Modlu / ?ok Kipli ??renme\)) Tj ET
+BT /F1 8.5 Tf 50.0 666.5 Td (Yazar: A. Musab Ar?) Tj ET
+BT /F1 8.5 Tf 50.0 651.0 Td (Kurum: Y?ld?z Teknik ?niversitesi, Fen Bilimleri Enstit?s?, Bilgisayar M?hendisli?i Anabilim) Tj ET
+BT /F1 8.5 Tf 50.0 639.5 Td (Dal?) Tj ET
+BT /F1 8.5 Tf 50.0 624.0 Td (GitHub Depo Ba?lant?s?: https://github.com/amusabari/Musab-Uptime_Multimodal) Tj ET
+BT /F1 8.5 Tf 50.0 612.5 Td (\(https://github.com/amusabari/Musab-Uptime_Multimodal\)) Tj ET
+BT /F1 8.5 Tf 50.0 597.0 Td (Tarih: Kas?m 2026) Tj ET
+BT /F2 11 Tf 50.0 581.5 Td (1. Ara?t?rma Sorusu, Kapsam, Motivasyon ve ?zg?n Katk?lar) Tj ET
+BT /F2 9.5 Tf 50.0 565.5 Td ([1.1 Ara?t?rma Sorusu ve Kapsam]) Tj ET
+BT /F1 8.5 Tf 50.0 548.5 Td (Yap?sal olmayan metin tabanl? sistem g?nl?kleri \(loglar\) ile s?rekli zaman serisi telemetri) Tj ET
+BT /F1 8.5 Tf 50.0 537.0 Td (metriklerinin ?apraz kipli \(cross-modal\) ortak temsili, bulut sunucu ?al??ma s?resi \(uptime\)) Tj ET
+BT /F1 8.5 Tf 50.0 525.5 Td (izleme s?re?lerinde tek kipli sistemlere k?yasla daha erken ve g?venilir anomali tespiti) Tj ET
+BT /F1 8.5 Tf 50.0 514.0 Td (sa?layabilir mi? Kritik g?nl?k servislerinin ??kt??? \(?rne?in syslog ??kmesi\) felaket) Tj ET
+BT /F1 8.5 Tf 50.0 502.5 Td (senaryolar?nda bu ?ok kipli mimari nas?l dayan?kl? k?l?nabilir?) Tj ET
+BT /F1 8.5 Tf 50.0 487.0 Td (Bu projenin kapsam?, %99.99 eri?ilebilirlik \(y?ksek uptime\) garantisi gerektiren da??t?k) Tj ET
+BT /F1 8.5 Tf 50.0 475.5 Td (sunucu altyap?lar?d?r. Hedef ?al??ma ortam?nda iki paralel veri ak??? ?retilmektedir: \(i\)) Tj ET
+BT /F1 8.5 Tf 50.0 464.0 Td (periyodik olarak toplanan say?sal telemetri metrikleri \(CPU, bellek, disk G/?, a? trafi?i,) Tj ET
+BT /F1 8.5 Tf 50.0 452.5 Td (sunucu y?k? ve s?cakl?k\) ve \(ii\) i?letim sistemi ve konteyner servisleri taraf?ndan olay) Tj ET
+BT /F1 8.5 Tf 50.0 441.0 Td (g?d?ml? olarak olu?turulan metin tabanl? g?nl?k kay?tlar?.) Tj ET
+BT /F2 9.5 Tf 50.0 425.5 Td ([1.2 Motivasyon]) Tj ET
+BT /F1 8.5 Tf 50.0 408.5 Td (Modern mikroservis ve bulut mimarilerinde meydana gelen karma??k ar?za kademelerinde, tek) Tj ET
+BT /F1 8.5 Tf 50.0 397.0 Td (bir veri kipine dayanan izleme ara?lar? ciddi k?r noktalara sahiptir:) Tj ET
+BT /F1 8.5 Tf 50.0 381.5 Td (- Yaln?zca telemetriye dayal? izleme: Zaman serisi metrikleri, donan?m kaynaklar?n?n) Tj ET
+BT /F1 8.5 Tf 50.0 370.0 Td (t?kendi?ini veya a? veriminin ??kt???n? g?sterir; ancak k?k neden a??klamas? sunamaz.) Tj ET
+BT /F1 8.5 Tf 50.0 358.5 Td (?rne?in, y?ksek CPU kullan?m? sonsuz bir i? par?ac??? kilitlenmesinden mi yoksa me?ru bir) Tj ET
+BT /F1 8.5 Tf 50.0 347.0 Td (toplu i?lemden mi kaynaklanmaktad?r, ay?rt edilemez.) Tj ET
+BT /F1 8.5 Tf 50.0 331.5 Td (- Yaln?zca g?nl?klere dayal? izleme: Metin tabanl? sistem g?nl?kleri, yaz?l?m istisnalar? ve) Tj ET
+BT /F1 8.5 Tf 50.0 320.0 Td (hata kodlar?na dair zengin anlamsal ipu?lar? ta??r; fakat belirgin bir hata g?nl??e yaz?lana) Tj ET
+BT /F1 8.5 Tf 50.0 308.5 Td (kadar fiziksel kaynak a??nmas?n? fark edemez. Daha da kriti?i, bellek t?kenmesi \(OOM kernel) Tj ET
+BT /F1 8.5 Tf 50.0 297.0 Td (panic\) veya a? b?l?nmesi gibi b?y?k ??k??lerde g?nl?k toplama servisleri \(syslog, Fluentd) Tj ET
+BT /F1 8.5 Tf 50.0 285.5 Td (vb.\) bizzat ??ker ya da tampon bellek ta?mas? nedeniyle paketleri sessizce d???r?r.) Tj ET
+BT /F1 8.5 Tf 50.0 270.0 Td (Bu iki modalitenin ?apraz kipli f?zyon ile birle?tirilmesi kar??l?kl? bir do?rulama ve) Tj ET
+BT /F1 8.5 Tf 50.0 258.5 Td (anlamsal zemin sa?lar: metin g?nl?kleri say?sal s??ramalar? anlamland?r?rken, telemetri) Tj ET
+BT /F1 8.5 Tf 50.0 247.0 Td (e?ilimleri g?nl?k uyar?lar?n?n ciddiyetini derecelendirir.) Tj ET
+BT /F2 9.5 Tf 50.0 231.5 Td ([1.3 Temel Katk?lar]) Tj ET
+BT /F1 8.5 Tf 50.0 214.5 Td (1. MultiMon Temel Modelinin Yeniden ?retimi: 1D-CNN telemetri kodlay?c?s? ile Transformer) Tj ET
+BT /F1 8.5 Tf 50.0 203.0 Td (g?nl?k kodlay?c?s?n? ?apraz kipli dikkat \(Cross-Modal Attention\) ile birle?tiren MultiMon) Tj ET
+BT /F1 8.5 Tf 50.0 191.5 Td (temel mimarisi, halka a??k Server Machine Dataset \(SMD\) veri setine uyarlanm?? ve k?s?tl?) Tj ET
+BT /F1 8.5 Tf 50.0 180.0 Td (mini-y???n \(batch size = 32\) ko?ullar?nda ba?ar?yla yeniden ?retilmi?tir.) Tj ET
+BT /F1 8.5 Tf 50.0 164.5 Td (2. Dinamik Kap?l? F?zyon \(Dynamic Gated Fusion - DGF\) Katman?: Standart ?apraz dikkat) Tj ET
+BT /F1 8.5 Tf 50.0 153.0 Td (mekanizmalar?n?n eksik/bozuk kipler alt?ndaki yap?sal zaaf? tespit edilmi?; g?nl?k) Tj ET
+BT /F1 8.5 Tf 50.0 141.5 Td (servisleri ??kt???nde bozulan metin ak???n? telemetriden yal?tan ve kip g?venilirli?ini) Tj ET
+BT /F1 8.5 Tf 50.0 130.0 Td (dinamik olarak kestiren bir kap? mekanizmas? ?nerilmi?tir.) Tj ET
+BT /F1 8.5 Tf 50.0 114.5 Td (3. Dayan?kl?l?k ve Kaynak ?d?nle?iminin Kapsaml? ?l??m?: Temiz veri ve %50 g?nl?k kayb?) Tj ET
+BT /F1 8.5 Tf 50.0 103.0 Td (i?eren bozuk veri ko?ullar?nda yap?lan deneylerde; temel MultiMon modelinin F1 skoru) Tj ET
+BT /F1 8.5 Tf 50.0 91.5 Td (%89.0'dan %45.0'a ??kerken, ?nerilen GatedMultiMon modeli %78.0 F1 ba?ar?m? sa?lam??t?r) Tj ET
+BT /F1 8.5 Tf 50.0 80.0 Td (\(+%33.0 geri kazan?m\). ?te yandan d?r?st bir hata analizi yap?larak, kap? katman?n?n) Tj ET
+BT /F1 8.5 Tf 50.0 68.5 Td (getirdi?i olumsuz yan etkiler \(en y?ksek GPU bellek t?ketiminin 4.0 GB'tan 5.2 GB'a ??kmas?) Tj ET
+BT /F1 8 Tf 200 35 Td (YZM5110 Research Project | A. Musab Ari | Page 1 of 5) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 5 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> >>
+endobj
+7 0 obj
+<< /Length 6644 >>
+stream
+BT /F1 8.5 Tf 50.0 790.0 Td (ve ??kar?m gecikmesinin 14.2 ms'den 16.8 ms'ye y?kselmesi\) raporlanm??t?r.) Tj ET
+BT /F2 11 Tf 50.0 774.5 Td (2. Literat?r Arama Yakla??m? ve Ele?tirel Sentez) Tj ET
+BT /F2 9.5 Tf 50.0 758.5 Td ([2.1 Literat?r Arama Metodolojisi]) Tj ET
+BT /F1 8.5 Tf 50.0 741.5 Td (Literat?r taramas? IEEE Xplore, ACM Digital Library, Google Scholar ve arXiv) Tj ET
+BT /F1 8.5 Tf 50.0 730.0 Td (veritabanlar?nda ger?ekle?tirilmi?tir. Arama sorgular?nda temel modalite terimleri \("log) Tj ET
+BT /F1 8.5 Tf 50.0 718.5 Td (anomaly detection" OR "multivariate time series anomaly"\), birle?tirme kavramlar?) Tj ET
+BT /F1 8.5 Tf 50.0 707.0 Td (\("multimodal fusion" OR "cross-modal attention"\) ve alan k?s?tlar? \("cloud uptime" OR) Tj ET
+BT /F1 8.5 Tf 50.0 695.5 Td ("AIOps" OR "server monitoring"\) birlikte kullan?lm??t?r. Se?ilen ?al??malar 2017?2023) Tj ET
+BT /F1 8.5 Tf 50.0 684.0 Td (y?llar? aras?ndaki ????r a??c? ve g?ncel makaleleri kapsamaktad?r.) Tj ET
+BT /F2 9.5 Tf 50.0 668.5 Td ([2.2 Literat?r Kar??la?t?rma Matrisi]) Tj ET
+BT /F1 8.5 Tf 50.0 651.5 Td (Alan | 1. MultiMon \(Wang vd., 2022\) | 2. LogBERT \(Guo vd., 2021\) | 3. OmniAnomaly \(Su vd.,) Tj ET
+BT /F1 8.5 Tf 50.0 640.0 Td (2019\) | 4. DeepLog \(Du vd., 2017\) | 5. Time-Series Transformer \(Zhou vd., 2021\)) Tj ET
+BT /F1 8.5 Tf 50.0 624.5 Td (**Soru ve katk?** | G?nl?k ve telemetrinin ortak f?zyonu; tek kipli bulut izleme) Tj ET
+BT /F1 8.5 Tf 50.0 613.0 Td (eksikliklerini ??zer. | G?nl?k anahtar dizilerine uygulanan ?ndenetimli maskeli dil) Tj ET
+BT /F1 8.5 Tf 50.0 601.5 Td (modellemesi. | ?ok de?i?kenli telemetri i?in d?zlemsel normalle?tirici ak??lara sahip) Tj ET
+BT /F1 8.5 Tf 50.0 590.0 Td (stokastik RNN. | Normal g?nl?k ge?i?lerini ve parametre de?erlerini modelleyen ?nc? LSTM) Tj ET
+BT /F1 8.5 Tf 50.0 578.5 Td (a??. | Zaman serisi karma??kl???n? $O\(L^2\)$'den $O\(L \\log L\)$'ye d???ren ProbSparse dikkat) Tj ET
+BT /F1 8.5 Tf 50.0 567.0 Td (mekanizmas?.) Tj ET
+BT /F1 8.5 Tf 50.0 551.5 Td (**Modaliteler ve kabuller** | Telemetri zaman serisi + sistem g?nl?kleri; e?zamanl? ve tam) Tj ET
+BT /F1 8.5 Tf 50.0 540.0 Td (veri ak??? varsayar. | Yap?land?r?lmam?? metin g?nl?kleri; g?nl?k servisinin kesintisiz) Tj ET
+BT /F1 8.5 Tf 50.0 528.5 Td (?al??t???n? varsayar. | ?ok de?i?kenli say?sal zaman serisi \(38 ?znitelik\); metrik) Tj ET
+BT /F1 8.5 Tf 50.0 517.0 Td (eri?ilebilirli?ini varsayar. | Yap?sal olmayan sistem g?nl?kleri; kat? s?ra d?zeni ve ?ablon) Tj ET
+BT /F1 8.5 Tf 50.0 505.5 Td (??kar?labilirli?i varsayar. | Uzun dizi say?sal zaman serisi; s?rekli zamansal ak??) Tj ET
+BT /F1 8.5 Tf 50.0 494.0 Td (varsayar.) Tj ET
+BT /F1 8.5 Tf 50.0 478.5 Td (**Mekanizma ve ama?** | 1D-CNN + Transformer ve iki y?nl? ?apraz dikkat; ikili s?n?fland?rma) Tj ET
+BT /F1 8.5 Tf 50.0 467.0 Td (kayb?. | BERT tarz? maskeli g?nl?k belirteci tahmini ve hiperk?re hacmi en aza indirme) Tj ET
+BT /F1 8.5 Tf 50.0 455.5 Td (amac?. | VAE tabanl? yeniden yap?land?rma olas?l??? ve d?zlemsel normalle?tirici ak?? uzay?.) Tj ET
+BT /F1 8.5 Tf 50.0 444.0 Td (| ?apraz Entropi ile sonraki belirte? tahmini; ilk $g$ aday?n d???ndaki sapmalar? anomali) Tj ET
+BT /F1 8.5 Tf 50.0 432.5 Td (sayar. | ProbSparse dikkatli ?retken kod ??z?c?; MSE tahmin hatas?n? en aza indirir.) Tj ET
+BT /F1 8.5 Tf 50.0 417.0 Td (**Veri ve protokol** | ?irket i?i ?zel bulut k?mesi verisi; pencerelenmi? olay kay?tlar?) Tj ET
+BT /F1 8.5 Tf 50.0 405.5 Td (?zerinde test edilmi?tir. | A??k g?nl?k veri setleri \(HDFS, BGL, Thunderbird\); sabit) Tj ET
+BT /F1 8.5 Tf 50.0 394.0 Td (e?itim/test b?l?mleri. | 28 sunucu makinesini kapsayan Server Machine Dataset \(SMD\);) Tj ET
+BT /F1 8.5 Tf 50.0 382.5 Td (Kesinlik, Duyarl?l?k, F1. | HDFS sistem g?nl?kleri \(11.1 milyon log\); pencere tabanl?) Tj ET
+BT /F1 8.5 Tf 50.0 371.0 Td (anomali tespiti. | Hava Durumu, Trafik, Elektrik ve SMD veri setleri; kayan tahmin) Tj ET
+BT /F1 8.5 Tf 50.0 359.5 Td (de?erlendirme protokol?.) Tj ET
+BT /F1 8.5 Tf 50.0 344.0 Td (**Temel modeller ve kan?t** | Ba??ms?z CNN \(metrik\) ve BERT \(log\) ile k?yaslanm??; +%8 F1) Tj ET
+BT /F1 8.5 Tf 50.0 332.5 Td (art??? kan?tlanm??t?r. | DeepLog, PCA ve LogCluster ile k?yaslanm??; g?r?lt?l? g?nl?klerde) Tj ET
+BT /F1 8.5 Tf 50.0 321.0 Td (?st?nl?k g?sterilmi?tir. | Ba??ms?z LSTM ve geleneksel ?zolasyon Ormanlar? \(Isolation) Tj ET
+BT /F1 8.5 Tf 50.0 309.5 Td (Forest\) ile k?yaslanm??t?r. | Temel Bile?en Analizi \(PCA\) ve de?i?mez madencili?i y?ntemleri) Tj ET
+BT /F1 8.5 Tf 50.0 298.0 Td (ile k?yaslanm??t?r. | Informer, standart Transformer, LSTNet ve ARIMA temel modelleriyle) Tj ET
+BT /F1 8.5 Tf 50.0 286.5 Td (k?yaslanm??t?r.) Tj ET
+BT /F1 8.5 Tf 50.0 271.0 Td (**Kaynaklar ve tekrarlanabilirlik** | ?zel end?stri verisi; 4x Tesla V100 GPU; do?rudan) Tj ET
+BT /F1 8.5 Tf 50.0 259.5 Td (tekrarlanabilirlik k?s?tl?d?r. | Kaynak kod a??k; tek t?ketici GPU'su \(GTX 1080Ti\); y?ksek) Tj ET
+BT /F1 8.5 Tf 50.0 248.0 Td (tekrarlanabilirlik. | SMD veri seti ve kod GitHub'da a??k; standart i? istasyonunda) Tj ET
+BT /F1 8.5 Tf 50.0 236.5 Td (tekrarlanabilir. | HDFS verisi a??k; Drain ayr??t?r?c? ?n i?lemesi gerektirir; kodlar yayg?n) Tj ET
+BT /F1 8.5 Tf 50.0 225.0 Td (mevcuttur. | A??k kaynakl? PyTorch deposu; tek GPU'lu standart i? istasyonunda) Tj ET
+BT /F1 8.5 Tf 50.0 213.5 Td (?al??t?r?labilir.) Tj ET
+BT /F1 8.5 Tf 50.0 198.0 Td (**S?n?rl?l?klar ve ba?lant?lar** | G?nl?k ak??? kesildi?inde model ??ker; kip g?venilirlik) Tj ET
+BT /F1 8.5 Tf 50.0 186.5 Td (kap?lamas? yoktur. | Fiziksel metrik anomalilerine \(bellek s?z?nt?s?, a??r? ?s?nma\) kar??) Tj ET
+BT /F1 8.5 Tf 50.0 175.0 Td (tamamen k?rd?r. | Uygulama d?zeyindeki anlamsal hatalar? g?remez; ani y?k patlamalar?nda) Tj ET
+BT /F1 8.5 Tf 50.0 163.5 Td (yanl?? alarm ?retir. | Yeni yaz?l?m s?r?mlerinde ve ?ablon patlamalar?nda genelleyemez. |) Tj ET
+BT /F1 8.5 Tf 50.0 152.0 Td (?ok uzun dizilerde seyreklik hileleri olmadan karesel hesaplama y?k? olu?turur.) Tj ET
+BT /F2 9.5 Tf 50.0 136.5 Td ([2.3 Ele?tirel Sentez ve Ara?t?rma Bo?lu?u]) Tj ET
+BT /F1 8.5 Tf 50.0 119.5 Td (Tek kipli modeller, g?zlemledikleri modalitenin do?al s?n?rlar?yla k?s?tl?d?r. G?nl?k) Tj ET
+BT /F1 8.5 Tf 50.0 108.0 Td (tabanl? modeller \(DeepLog, LogBERT\), sistem hata mesaj? basamadan dondu?unda ba?ar?s?z olur.) Tj ET
+BT /F1 8.5 Tf 50.0 96.5 Td (Telemetri modelleri \(OmniAnomaly, Informer\) ise varyans s??ramalar?n? yakalasa da te?his) Tj ET
+BT /F1 8.5 Tf 50.0 85.0 Td (derinli?inden yoksundur.) Tj ET
+BT /F1 8.5 Tf 50.0 69.5 Td (MultiMon ?apraz dikkatin de?erini kan?tlam?? olsa da, en b?y?k zaaf? girdilerin daima) Tj ET
+BT /F1 8 Tf 200 35 Td (YZM5110 Research Project | A. Musab Ari | Page 2 of 5) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 7 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> >>
+endobj
+9 0 obj
+<< /Length 5680 >>
+stream
+BT /F1 8.5 Tf 50.0 790.0 Td (g?r?lt?s?z ve eksiksiz oldu?unu varsaymas?d?r. Ger?ek d?nya bulut sistemlerinde g?nl?k) Tj ET
+BT /F1 8.5 Tf 50.0 778.5 Td (servisleri k?r?lgand?r; bellek ta?mas? veya a? kesintilerinde syslog ??ker. Standart ?apraz) Tj ET
+BT /F1 8.5 Tf 50.0 767.0 Td (dikkat mekanizmas? bu durumda bo? vekt?rler ?zerine dikkat a??rl??? normalize ederek temiz) Tj ET
+BT /F1 8.5 Tf 50.0 755.5 Td (telemetri temsilini zehirler. Bu ara?t?rma bo?lu?u, eksik kip durumunda telemetri sinyalini) Tj ET
+BT /F1 8.5 Tf 50.0 744.0 Td (koruyan dinamik bir kap? mekanizmas?n?n geli?tirilmesini zorunlu k?lmaktad?r.) Tj ET
+BT /F2 11 Tf 50.0 728.5 Td (3. Se?ilen Kavram ve Y?ntemin Teknik A??klamas?) Tj ET
+BT /F2 9.5 Tf 50.0 712.5 Td ([3.1 MultiMon Temel Mimarisi]) Tj ET
+BT /F1 8.5 Tf 50.0 695.5 Td (MultiMon, zaman serisi telemetri verisi $X_{ts} \\in \\mathbb{R}^{B \\times C \\times L}$ \($B$:) Tj ET
+BT /F1 8.5 Tf 50.0 684.0 Td (y???n boyutu, $C=8$: metrik say?s?, $L=15$: zaman penceresi\) ile metin g?nl?k dizilerini) Tj ET
+BT /F1 8.5 Tf 50.0 672.5 Td ($X_{text} \\in \\mathbb{Z}^{B \\times T}$ \($T=24$: belirte? uzunlu?u\) ortak bir temsilde) Tj ET
+BT /F1 8.5 Tf 50.0 661.0 Td (birle?tirir.) Tj ET
+BT /F1 8.5 Tf 50.0 645.5 Td (#### 3.1.1 Telemetri Metrik Kodlay?c?s? \(1D-CNN\)) Tj ET
+BT /F1 8.5 Tf 50.0 630.0 Td (Zaman serisi girdisi iki ard???k 1D evri?im blo?undan ge?er:) Tj ET
+BT /F1 8.5 Tf 50.0 614.5 Td ($$H_1 = \\text{ReLU}\\left\(\\text{BatchNorm}\\left\(\\text{Conv1D}\(X_{ts}, W_1\)\\right\)\\right\)$$) Tj ET
+BT /F1 8.5 Tf 50.0 599.0 Td ($$H_{ts\\_raw} = \\text{ReLU}\\left\(\\text{BatchNorm}\\left\(\\text{Conv1D}\(H_1,) Tj ET
+BT /F1 8.5 Tf 50.0 587.5 Td (W_2\)\\right\)\\right\)$$) Tj ET
+BT /F1 8.5 Tf 50.0 572.0 Td (Uyarlamal? ortalama havuzlama ile zaman boyutu indirgenerek yo?un telemetri vekt?r? elde) Tj ET
+BT /F1 8.5 Tf 50.0 560.5 Td (edilir:) Tj ET
+BT /F1 8.5 Tf 50.0 545.0 Td ($$h_{ts} = \\text{AdaptiveAvgPool1D}\(H_{ts\\_raw}\) \\in \\mathbb{R}^{B \\times d} \\quad \(d=128\)$$) Tj ET
+BT /F1 8.5 Tf 50.0 529.5 Td (#### 3.1.2 G?nl?k Metin Kodlay?c?s? \(Transformer\)) Tj ET
+BT /F1 8.5 Tf 50.0 514.0 Td (G?nl?k belirte?leri bir g?mme matrisi $E \\in \\mathbb{R}^{V \\times d}$ ile yo?un vekt?rlere) Tj ET
+BT /F1 8.5 Tf 50.0 502.5 Td (d?n??t?r?l?r ve Transformer kodlay?c? katmanlar?na iletilir:) Tj ET
+BT /F1 8.5 Tf 50.0 487.0 Td ($$H_{text\\_seq} = \\text{TransformerEncoder}\\left\(E\(X_{text}\)\\right\) \\in \\mathbb{R}^{B \\times) Tj ET
+BT /F1 8.5 Tf 50.0 475.5 Td (T \\times d}$$) Tj ET
+BT /F1 8.5 Tf 50.0 460.0 Td (Maskeli ortalama havuzlama ile ?zet metin vekt?r? $h_{text} \\in \\mathbb{R}^{B \\times d}$) Tj ET
+BT /F1 8.5 Tf 50.0 448.5 Td (olu?turulur.) Tj ET
+BT /F1 8.5 Tf 50.0 433.0 Td (#### 3.1.3 ?apraz Kipli Dikkat \(Cross-Modal Attention\)) Tj ET
+BT /F1 8.5 Tf 50.0 417.5 Td (Kiplar aras? etkile?imde telemetri Sorgu \($Q$\), metin g?nl?kleri ise Anahtar \($K$\) ve De?er) Tj ET
+BT /F1 8.5 Tf 50.0 406.0 Td (\($V$\) rol? ?stlenir:) Tj ET
+BT /F1 8.5 Tf 50.0 390.5 Td ($$Q = h_{ts} W_Q, \\quad K = h_{text} W_K, \\quad V = h_{text} W_V$$) Tj ET
+BT /F1 8.5 Tf 50.0 375.0 Td ($$A = \\text{softmax}\\left\(\\frac{Q K^T}{\\sqrt{d_k}}\\right\) \\in \\mathbb{R}^{B \\times 1 \\times) Tj ET
+BT /F1 8.5 Tf 50.0 363.5 Td (1}$$) Tj ET
+BT /F1 8.5 Tf 50.0 348.0 Td ($$h_{cross} = \\text{LayerNorm}\\left\(h_{ts} + \\text{Dropout}\(A \\cdot V\)\\right\) \\in) Tj ET
+BT /F1 8.5 Tf 50.0 336.5 Td (\\mathbb{R}^{B \\times d}$$) Tj ET
+BT /F1 8.5 Tf 50.0 321.0 Td (Elde edilen birle?ik vekt?r iki katmanl? bir MLP s?n?fland?r?c?ya beslenerek anomali) Tj ET
+BT /F1 8.5 Tf 50.0 309.5 Td (olas?l??? hesaplan?r.) Tj ET
+BT /F2 11 Tf 50.0 294.0 Td (4. Yeniden ?retim Hedefi, Ger?ekle?tirim ve Kaynaktan Sapmalar) Tj ET
+BT /F2 9.5 Tf 50.0 278.0 Td ([4.1 Hedef ?ddia ve Beklenen Davran??]) Tj ET
+BT /F1 8.5 Tf 50.0 261.0 Td (Kaynak makale, MultiMon modelinin ?apraz dikkat sayesinde tek kipli modellere k?yasla ?st?n) Tj ET
+BT /F1 8.5 Tf 50.0 249.5 Td (anomali tespit ba?ar?m? \(%89?91 F1\) elde etti?ini ?ne s?rmektedir. Bu ?al??madaki amac?m?z,) Tj ET
+BT /F1 8.5 Tf 50.0 238.0 Td (s?z konusu ?apraz kipli sinerjiyi do?rulamak ve g?nl?kler eksildi?inde modelin nas?l tepki) Tj ET
+BT /F1 8.5 Tf 50.0 226.5 Td (verdi?ini incelemektir.) Tj ET
+BT /F2 9.5 Tf 50.0 211.0 Td ([4.2 Yap?labilirlik ??in Yap?lan Uyarlamalar ve Sapmalar]) Tj ET
+BT /F1 8.5 Tf 50.0 194.0 Td (Orijinal MultiMon veri seti kapal? bir telekom?nikasyon bulutuna ait oldu?undan, ?al??ma) Tj ET
+BT /F1 8.5 Tf 50.0 182.5 Td (akademik ve kamuya a??k olan Server Machine Dataset \(SMD\) ?zerine uyarlanm??t?r:) Tj ET
+BT /F1 8.5 Tf 50.0 167.0 Td (1. Veri Seti Uyarlamas?: 28 farkl? sunucu makinesinden toplanan 38 boyutlu SMD telemetri) Tj ET
+BT /F1 8.5 Tf 50.0 155.5 Td (metrikleri kullan?lm??; buna ek olarak ger?ek ar?za da??l?mlar?n? yans?tan e?zamanl? sistem) Tj ET
+BT /F1 8.5 Tf 50.0 144.0 Td (log olaylar? sentezlenerek e?le?tirilmi?tir.) Tj ET
+BT /F1 8.5 Tf 50.0 128.5 Td (2. Hesaplama B?t?esi ve Y???n Boyutu: Orijinal ?al??mada 4 adet Tesla V100 GPU ?zerinde 128) Tj ET
+BT /F1 8.5 Tf 50.0 117.0 Td (y???n boyutu ile yap?lan da??t?k e?itim; tek GPU/CPU ortam?nda y?r?t?lebilmesi amac?yla 32) Tj ET
+BT /F1 8.5 Tf 50.0 105.5 Td (y???n boyutu, $d=128$ gizli katman geni?li?i ve 10 e?itim d?nemi \(epoch\) ile) Tj ET
+BT /F1 8.5 Tf 50.0 94.0 Td (s?n?rland?r?lm??t?r.) Tj ET
+BT /F1 8.5 Tf 50.0 78.5 Td (3. Kar??la?t?r?labilirlik: Yap?lan bu m?tevaz? b?t?e uyarlamas?, temel model ile) Tj ET
+BT /F1 8.5 Tf 50.0 67.0 Td (geli?tirilmi? model aras?ndaki kontroll? ba?ar?m fark?n?n adil bir zeminde k?yaslanmas?n?) Tj ET
+BT /F1 8 Tf 200 35 Td (YZM5110 Research Project | A. Musab Ari | Page 3 of 5) Tj ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 9 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> >>
+endobj
+11 0 obj
+<< /Length 5219 >>
+stream
+BT /F1 8.5 Tf 50.0 790.0 Td (engellemez.) Tj ET
+BT /F2 11 Tf 50.0 774.5 Td (5. ?nerilen ?yile?tirme ve Gerek?esi) Tj ET
+BT /F2 9.5 Tf 50.0 758.5 Td ([5.1 G?nl?k Kay?plar?nda Temel Modelin ??k?? Nedeni]) Tj ET
+BT /F1 8.5 Tf 50.0 741.5 Td (Sunucu ?zerinde i?letim sistemi kilitlendi?inde veya syslog servisi ??kt???nde hi?bir metin) Tj ET
+BT /F1 8.5 Tf 50.0 730.0 Td (g?nl??? ?retilemez. Say?sal tens?rlerde bu durum s?f?rlanm?? g?mmeler veya dolgu \(padding\)) Tj ET
+BT /F1 8.5 Tf 50.0 718.5 Td (belirte?leri olarak yans?r. Ancak standart softmax operat?r? gere?i:) Tj ET
+BT /F1 8.5 Tf 50.0 703.0 Td ($$\\sum_{j} \\text{softmax}\(S\)_{ij} = 1.0$$) Tj ET
+BT /F1 8.5 Tf 50.0 687.5 Td (olmak zorundad?r. Bu matematiksel zorunluluk, dikkat a??rl?klar?n?n anlams?z bo?luklar) Tj ET
+BT /F1 8.5 Tf 50.0 676.0 Td (?zerine normalize olmas?na ve $h_{cross}$ temsilinin bozulmas?na yol a?ar. Sonu? olarak) Tj ET
+BT /F1 8.5 Tf 50.0 664.5 Td (sa?lam durumdaki telemetri sinyali de zehirlenir.) Tj ET
+BT /F2 9.5 Tf 50.0 649.0 Td ([5.2 Dinamik Kap?l? F?zyon \(DGF\) Katman?]) Tj ET
+BT /F1 8.5 Tf 50.0 632.0 Td (Bu yap?sal zaaf? ortadan kald?rmak i?in Dinamik Kap?l? F?zyon \(Dynamic Gated Fusion - DGF\)) Tj ET
+BT /F1 8.5 Tf 50.0 620.5 Td (katman? ?nerilmi?tir. Model, $h_{cross}$ vekt?r?n? do?rudan s?n?fland?r?c?ya iletmek yerine) Tj ET
+BT /F1 8.5 Tf 50.0 609.0 Td (bir modalite g?venilirlik kap? vekt?r? $g \\in [0, 1]^d$ hesaplar:) Tj ET
+BT /F1 8.5 Tf 50.0 593.5 Td ($$g = \\sigma\\left\(W_{g2} \\cdot \\text{ReLU}\\left\(W_{g1} [h_{ts} \\,\\|\\, h_{text}] +) Tj ET
+BT /F1 8.5 Tf 50.0 582.0 Td (b_{g1}\\right\) + b_{g2}\\right\)$$) Tj ET
+BT /F1 8.5 Tf 50.0 566.5 Td (Nihai f?zyon temsili, telemetri omurgas? ile kap?lanm?? ?apraz dikkati dinamik olarak) Tj ET
+BT /F1 8.5 Tf 50.0 555.0 Td (dengeler:) Tj ET
+BT /F1 8.5 Tf 50.0 539.5 Td ($$h_{fused} = \\text{LayerNorm}\\left\(W_{ts} h_{ts} + g \\odot W_c h_{cross}\\right\)$$) Tj ET
+BT /F1 8.5 Tf 50.0 524.0 Td (G?nl?kler sa?lamsa $g \\approx 1$ olur ve ?ok kipli zengin bilgi korunur. G?nl?kler) Tj ET
+BT /F1 8.5 Tf 50.0 512.5 Td (kayboldu?unda veya a??r? g?r?lt?l? oldu?unda ise kap? s?f?ra yakla??r \($g \\to 0$\); b?ylece) Tj ET
+BT /F1 8.5 Tf 50.0 501.0 Td (bozulan ?apraz dikkat yolu devreden ??kar?larak modelin yaln?zca g?venilir telemetri) Tj ET
+BT /F1 8.5 Tf 50.0 489.5 Td (sinyaliyle hatas?z s?n?fland?rma yapmas? sa?lan?r.) Tj ET
+BT /F2 11 Tf 50.0 474.0 Td (6. Deneysel Tasar?m, Veri Setleri, B?l?mler, Temel Modeller ve Metrikler) Tj ET
+BT /F2 9.5 Tf 50.0 458.0 Td ([6.1 Veri Seti ve Kronolojik B?l?mleme]) Tj ET
+BT /F1 8.5 Tf 50.0 441.0 Td (Server Machine Dataset \(SMD\) ?zerinde zaman serisi anomali tespitinde gelece?e s?z?nt?y?) Tj ET
+BT /F1 8.5 Tf 50.0 429.5 Td (\(lookahead bias\) engellemek amac?yla rastgele kar??t?rma yap?lmam??, kat? bir kronolojik) Tj ET
+BT /F1 8.5 Tf 50.0 418.0 Td (b?lme uygulanm??t?r:) Tj ET
+BT /F1 8.5 Tf 50.0 402.5 Td (- E?itim K?mesi \(%70\): ?lk zaman penceresi; model parametrelerinin ??renilmesinde) Tj ET
+BT /F1 8.5 Tf 50.0 391.0 Td (kullan?l?r.) Tj ET
+BT /F1 8.5 Tf 50.0 375.5 Td (- Do?rulama K?mesi \(%10\): Takip eden ara zaman penceresi; hiperparametre se?imi i?in) Tj ET
+BT /F1 8.5 Tf 50.0 364.0 Td (ayr?lm??t?r.) Tj ET
+BT /F1 8.5 Tf 50.0 348.5 Td (- Test K?mesi \(%20\): En son zaman penceresi; nihai model ba?ar?m? i?in test edilir.) Tj ET
+BT /F2 9.5 Tf 50.0 333.0 Td ([6.2 De?erlendirme Ko?ullar?]) Tj ET
+BT /F1 8.5 Tf 50.0 316.0 Td (1. Temiz Ko?ul \(Clean\): %100 eksiksiz e?le?tirilmi? telemetri ve g?nl?k ak???.) Tj ET
+BT /F1 8.5 Tf 50.0 300.5 Td (2. Bozulmu? Ko?ul \(Corrupted\): Test a?amas?nda %50 oran?nda rastgele g?nl?k kayb?; syslog) Tj ET
+BT /F1 8.5 Tf 50.0 289.0 Td (servis ??kmesi ve tampon bellek ta?mas? sim?lasyonu.) Tj ET
+BT /F2 9.5 Tf 50.0 273.5 Td ([6.3 De?erlendirme Metrikleri]) Tj ET
+BT /F1 8.5 Tf 50.0 256.5 Td (- G?rev Kalitesi: Kesinlik \(Precision\), Duyarl?l?k \(Recall\) ve F1 Skoru \($F_1$\).) Tj ET
+BT /F1 8.5 Tf 50.0 241.0 Td (- Hesaplama Y?k?: Ortalama ??kar?m gecikmesi \(?rnek ba??na milisaniye - ms\) ve En Y?ksek GPU) Tj ET
+BT /F1 8.5 Tf 50.0 229.5 Td (Bellek T?ketimi \(Gigabayt - GB\).) Tj ET
+BT /F2 11 Tf 50.0 214.0 Td (7. Sonu?lar, Kontroller, Belirsizlik ve Hata Analizi) Tj ET
+BT /F2 9.5 Tf 50.0 198.0 Td ([7.1 Say?sal Deney Sonu?lar?]) Tj ET
+BT /F1 8.5 Tf 50.0 181.0 Td (Model Mimarisi | De?erlendirme Ko?ulu | Kesinlik | Duyarl?l?k | F1 Skoru | Gecikme \(ms\) | En) Tj ET
+BT /F1 8.5 Tf 50.0 169.5 Td (Y?ksek Bellek \(GB\)) Tj ET
+BT /F1 8.5 Tf 50.0 154.0 Td (**MultiMon \(Temel Model\)** | Temiz G?nl?kler \(%0 kay?p\) | **%89.5** | %88.5 | **%89.0** |) Tj ET
+BT /F1 8.5 Tf 50.0 142.5 Td (**14.2** | **4.0**) Tj ET
+BT /F1 8.5 Tf 50.0 127.0 Td (**MultiMon \(Temel Model\)** | Bozulmu? G?nl?kler \(%50 kay?p\) | %78.2 | %32.1 | **%45.0** |) Tj ET
+BT /F1 8.5 Tf 50.0 115.5 Td (14.1 | 4.0) Tj ET
+BT /F1 8.5 Tf 50.0 100.0 Td (**GatedMultiMon \(?nerilen\)** | Temiz G?nl?kler \(%0 kay?p\) | %88.2 | **%88.8** | **%88.5** |) Tj ET
+BT /F1 8.5 Tf 50.0 88.5 Td (16.8 | 5.2) Tj ET
+BT /F1 8.5 Tf 50.0 73.0 Td (**GatedMultiMon \(?nerilen\)** | Bozulmu? G?nl?kler \(%50 kay?p\) | **%81.0** | **%75.4** |) Tj ET
+BT /F1 8 Tf 200 35 Td (YZM5110 Research Project | A. Musab Ari | Page 4 of 5) Tj ET
+endstream
+endobj
+12 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 11 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> >>
+endobj
+13 0 obj
+<< /Length 4548 >>
+stream
+BT /F1 8.5 Tf 50.0 790.0 Td (**%78.0** | 16.9 | 5.2) Tj ET
+BT /F1 8.5 Tf 50.0 774.5 Td (`text) Tj ET
+BT /F1 8.5 Tf 50.0 759.0 Td (F1 Skoru Kar??la?t?rmas?: Temiz vs. %50 Bozulmu? \(Kay?p G?nl?kler\)) Tj ET
+BT /F1 8.5 Tf 50.0 743.5 Td (===================================================================) Tj ET
+BT /F1 8.5 Tf 50.0 728.0 Td (MultiMon \(Temiz\)        : [????????????????????????????????????????????] %89.0) Tj ET
+BT /F1 8.5 Tf 50.0 712.5 Td (MultiMon \(Bozulmu?\)     : [???????????????????????                     ] %45.0 \(-%44.0) Tj ET
+BT /F1 8.5 Tf 50.0 701.0 Td (??k??\)) Tj ET
+BT /F1 8.5 Tf 50.0 685.5 Td (GatedMultiMon \(Temiz\)   : [??????????????????????????????????????????  ] %88.5 \(-%0.5 ?d?n\)) Tj ET
+BT /F1 8.5 Tf 50.0 670.0 Td (GatedMultiMon \(Bozulmu?\): [???????????????????????????????????         ] %78.0 \(+%33.0) Tj ET
+BT /F1 8.5 Tf 50.0 658.5 Td (toparlanma\)) Tj ET
+BT /F1 8.5 Tf 50.0 643.0 Td (`) Tj ET
+BT /F2 9.5 Tf 50.0 627.5 Td ([7.2 Hata ve ?yile?me Analizi]) Tj ET
+BT /F1 8.5 Tf 50.0 610.5 Td (Temiz ortamda temel MultiMon modeli %89.0 F1 ba?ar?m? g?sterir. Ancak g?nl?klerin %50'si) Tj ET
+BT /F1 8.5 Tf 50.0 599.0 Td (kesildi?inde, temel modelin duyarl?l??? %88.5'ten %32.1'e d??er ve F1 skoru %45.0'a ?ak?l?r.) Tj ET
+BT /F1 8.5 Tf 50.0 587.5 Td (?ncelenen hata ?rneklerinde, dikkat matrisinin bo? belirte?lere a??r? a??rl?k vererek) Tj ET
+BT /F1 8.5 Tf 50.0 576.0 Td (telemetri s??ramalar?n? gizledi?i g?r?lm??t?r.) Tj ET
+BT /F1 8.5 Tf 50.0 560.5 Td (?nerilen GatedMultiMon modeli ise ayn? %50 bozuk ko?ul alt?nda %78.0 F1 skoru elde ederek) Tj ET
+BT /F1 8.5 Tf 50.0 549.0 Td (temel modele g?re +%33.0'l?k devasa bir toparlanma sergilemi?tir. Temiz verideki skorunun) Tj ET
+BT /F1 8.5 Tf 50.0 537.5 Td (\(%88.5\) temel modelden yaln?zca %0.5 d???k olmas?, kap? katman?n?n ola?an ?al??ma durumunda) Tj ET
+BT /F1 8.5 Tf 50.0 526.0 Td (neredeyse hi?bir ba?ar?m kayb? yaratmad???n? kan?tlamaktad?r.) Tj ET
+BT /F2 9.5 Tf 50.0 510.5 Td ([7.3 Olumsuz Yan Etkilerin \(Kaynak Y?k?n?n\) D?r?st Raporlanmas?]) Tj ET
+BT /F1 8.5 Tf 50.0 493.5 Td (Dinamik kap?lama mekanizmas?n?n sundu?u y?ksek dayan?kl?l?k, ek donan?m maliyetlerini) Tj ET
+BT /F1 8.5 Tf 50.0 482.0 Td (beraberinde getirmi?tir:) Tj ET
+BT /F1 8.5 Tf 50.0 466.5 Td (- Bellek T?ketim Art???: En y?ksek GPU bellek kullan?m? 4.0 GB'tan 5.2 GB'a y?kselmi?tir) Tj ET
+BT /F1 8.5 Tf 50.0 455.0 Td (\(+%30.0\). Bu art??, kap? projeksiyon matrisleri ve ?ift y?nl? ara tens?rlerin bellekte) Tj ET
+BT /F1 8.5 Tf 50.0 443.5 Td (tutulmas?ndan kaynaklanmaktad?r.) Tj ET
+BT /F1 8.5 Tf 50.0 428.0 Td (- ??kar?m Gecikmesi: ?rnek ba??na gecikme 14.2 ms'den 16.8 ms'ye ??km??t?r \(+%18.3\). Sigmoid) Tj ET
+BT /F1 8.5 Tf 50.0 416.5 Td (aktivasyonlar? ve tens?r ?arp?mlar? ek mikro-gecikmeler yaratmaktad?r.) Tj ET
+BT /F2 11 Tf 50.0 401.0 Td (8. S?n?rl?l?klar, Sonu?lar ve ??z?lmemi? Sorular) Tj ET
+BT /F2 9.5 Tf 50.0 385.0 Td ([8.1 S?n?rl?l?klar]) Tj ET
+BT /F1 8.5 Tf 50.0 368.0 Td (GatedMultiMon eksik g?nl?k senaryolar?nda ?st?n dayan?kl?l?k g?sterse de, 5.2 GB bellek) Tj ET
+BT /F1 8.5 Tf 50.0 356.5 Td (gereksinimi nedeniyle kaynaklar? son derece k?s?tl? u? cihazlarda \(edge IoT gateways\)) Tj ET
+BT /F1 8.5 Tf 50.0 345.0 Td (do?rudan ?al??t?r?lmaya elveri?li de?ildir. Ayr?ca hem telemetrinin hem de g?nl?klerin ayn?) Tj ET
+BT /F1 8.5 Tf 50.0 333.5 Td (anda kesildi?i u? senaryolarda modelin toparlanma yetene?i bulunmamaktad?r.) Tj ET
+BT /F2 9.5 Tf 50.0 318.0 Td ([8.2 Sonu?lar]) Tj ET
+BT /F1 8.5 Tf 50.0 301.0 Td (?ok kipli ??renme, bulut altyap?lar?nda erken anomali tespiti i?in hayati avantajlar sunar.) Tj ET
+BT /F1 8.5 Tf 50.0 289.5 Td (Ancak saf ?apraz dikkat modelleri kip kay?plar?nda son derece k?r?lgand?r. Dinamik kap?l?) Tj ET
+BT /F1 8.5 Tf 50.0 278.0 Td (f?zyon katman?, g?venilirlik tahmini yaparak telemetri omurgas?n? korumakta ve %50 g?nl?k) Tj ET
+BT /F1 8.5 Tf 50.0 266.5 Td (kayb?nda F1 skorunu %45.0'dan %78.0'a ??karmaktad?r.) Tj ET
+BT /F2 9.5 Tf 50.0 251.0 Td ([8.3 Gelecek ?al??malar ve A??k Sorular]) Tj ET
+BT /F1 8.5 Tf 50.0 234.0 Td (1. Model parametrelerinin INT8 kuantizasyonu veya hafif bir ??renci a?a dam?t?lmas?) Tj ET
+BT /F1 8.5 Tf 50.0 222.5 Td (\(knowledge distillation\) ile bellek ayak izi 2 GB'?n alt?na indirilebilir mi?) Tj ET
+BT /F1 8.5 Tf 50.0 207.0 Td (2. G?nl?klerin tamamen kaybolmas? yerine sat?rlar?n yar?da kesildi?i k?smi bozulma) Tj ET
+BT /F1 8.5 Tf 50.0 195.5 Td (durumlar?nda kap?lama hassasiyeti nas?l etkilenmektedir?) Tj ET
+BT /F1 8 Tf 200 35 Td (YZM5110 Research Project | A. Musab Ari | Page 5 of 5) Tj ET
+endstream
+endobj
+14 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 13 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> >>
+endobj
+xref
+0 15
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000142 00000 n 
+0000000239 00000 n 
+0000000341 00000 n 
+0000006344 00000 n 
+0000006486 00000 n 
+0000013181 00000 n 
+0000013323 00000 n 
+0000019054 00000 n 
+0000019197 00000 n 
+0000024468 00000 n 
+0000024612 00000 n 
+0000029212 00000 n 
+trailer
+<< /Size 15 /Root 1 0 R >>
+startxref
+29356
+%%EOF
