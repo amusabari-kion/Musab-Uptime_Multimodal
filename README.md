@@ -7,7 +7,7 @@
 **Course**: YZM5110 - Research Project (Multimodal Learning)  
 **Author**: A. Musab Ari  
 **Institution**: Yildiz Technical University (YTU), Department of Computer Engineering / Graduate School of Science and Engineering  
-**Submission Repository**: [https://github.com/amusabari/Musab-Uptime_Multimodal](https://github.com/amusabari/Musab-Uptime_Multimodal)
+**Submission Repository**: [https://github.com/amusabari-kion/Musab-Uptime_Multimodal](https://github.com/amusabari-kion/Musab-Uptime_Multimodal)
 
 ---
 
@@ -90,7 +90,7 @@ Musab-Uptime_Multimodal/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/amusabari/Musab-Uptime_Multimodal.git
+git clone https://github.com/amusabari-kion/Musab-Uptime_Multimodal.git
 cd Musab-Uptime_Multimodal
 ```
 

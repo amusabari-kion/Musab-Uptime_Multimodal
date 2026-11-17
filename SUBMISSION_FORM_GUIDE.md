@@ -39,7 +39,7 @@ https://arxiv.org/abs/2108.04057
 **Form Açıklaması**: "Link to your github/HuggingFace repository"  
 **Yapıştırılacak URL**:
 ```text
-https://github.com/amusabari/Musab-Uptime_Multimodal
+https://github.com/amusabari-kion/Musab-Uptime_Multimodal
 ```
 *(Ödev isterlerine göre v1.0.0 etiketiyle commit edilmiş yerel git deposu klasörünüzde hazırdır. GitHub'da `Musab-Uptime_Multimodal` adıyla bir repo oluşturup `git push -u origin master --tags` yaptığınızda bu bağlantı canlı olacaktır).*
 

@@ -3,7 +3,7 @@
 **Course**: YZM5110 - Research Project (Multimodal Learning)  
 **Author**: A. Musab Ari  
 **Institution**: Graduate School of Science and Engineering, Yildiz Technical University  
-**Repository URL**: [https://github.com/amusabari/Musab-Uptime_Multimodal](https://github.com/amusabari/Musab-Uptime_Multimodal)  
+**Repository URL**: [https://github.com/amusabari-kion/Musab-Uptime_Multimodal](https://github.com/amusabari-kion/Musab-Uptime_Multimodal)  
 **Date**: November 2026  
 
 ---

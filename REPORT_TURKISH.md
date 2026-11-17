@@ -3,7 +3,7 @@
 **Ders**: YZM5110 - Araştırma Projesi (Çok Modlu / Çok Kipli Öğrenme)  
 **Yazar**: A. Musab Arı  
 **Kurum**: Yıldız Teknik Üniversitesi, Fen Bilimleri Enstitüsü, Bilgisayar Mühendisliği Anabilim Dalı  
-**GitHub Depo Bağlantısı**: [https://github.com/amusabari/Musab-Uptime_Multimodal](https://github.com/amusabari/Musab-Uptime_Multimodal)  
+**GitHub Depo Bağlantısı**: [https://github.com/amusabari-kion/Musab-Uptime_Multimodal](https://github.com/amusabari-kion/Musab-Uptime_Multimodal)  
 **Tarih**: Kasım 2026  
 
 ---
