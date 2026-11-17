@@ -1,0 +1,18 @@
+{
+    "model": "multimon",
+    "corrupt_logs": true,
+    "corruption_rate": 0.5,
+    "batch_size": 32,
+    "epochs": 10,
+    "metrics": {
+        "model": "MultiMon (Baseline Cross-Attention)",
+        "condition": "Corrupted Logs (50% Syslog Dropout)",
+        "precision": 0.782,
+        "recall": 0.321,
+        "f1": 0.45,
+        "latency_ms": 14.1,
+        "peak_gpu_mem_gb": 4.0,
+        "loss": 0.478
+    },
+    "timestamp": "2026-11-17 20:44:53"
+}
